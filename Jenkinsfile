@@ -8,11 +8,6 @@ pipeline {
 
   agent any
   stages {
-    stage('source_code_checkout') {
-        steps {
-            git 'https://github.com/KrishnaMouli/kstudy-thoughtworks.git'
-        }
-    }
     stage('Infra_Plan_TF') {
       when {
         expression { params.action == 'create' }
