@@ -1,0 +1,12 @@
+service_ports_worker_one=["80", "22"]
+service_ports_worker_two=["22"]
+cluster_version=1.17
+node_one_size="t2.micro"
+node_two_size="t2.medium"
+region="us-east-1"
+cluster_name="mediawiki-eks"
+identifier="mediawiki-db"
+instance_class="db.t2.micro"
+name="mediawikidb"
+db_user="admin"
+db_password="Ab123456"
